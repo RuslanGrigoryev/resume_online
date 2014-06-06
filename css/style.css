@@ -163,3 +163,26 @@ header {
 	padding-left: 20px;
 	background: url(../i/markup/sprite.png) 1px -1px no-repeat;
 }
+.skill-list {
+	margin: 0 0 0 40px;
+}
+.skill-list__item {
+	list-style: disc;
+	line-height: 1.5em;
+	display: table-row;
+}
+.skill-list__item strong {
+	display: table-cell;
+	color: #000;
+	font-weight: bold;
+	width: 17%;
+}
+.skill-list__item .wrap {
+	display: table-cell;
+	width: 60%;
+}
+.skill-list__item  .elem {
+    background: red;
+    width: 5%;
+    height: 12px;
+}
