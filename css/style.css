@@ -80,6 +80,7 @@ h2 {
 h3 {
 	padding-left: 20px;
 	font-size: 0.9em;
+	font-weight: bold;
 	color: #000;
 	margin: 10px 0;
 }
@@ -116,7 +117,6 @@ header {
 }
 .main-menu__item {
 	display: inline-block;
-	margin-right: 10px;
 }
 .main-menu__item__link--active {
 	font-weight: 800;
@@ -147,4 +147,11 @@ header {
 	color: #000;
 	font-weight: bold;
 	font-size: 0.7em;
+}
+.freelance-list {
+	margin: 0 0 0 40px;
+}
+.freelance-list__item {
+	line-height: 1.5em;
+	list-style: disc;
 }
