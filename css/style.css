@@ -1,5 +1,6 @@
 ﻿/*ORDER LIST 
 	1. RESET STYLES
+	2. GENERAL STYLES
 */
 
 /*1. RESET STYLES*/
@@ -28,9 +29,6 @@ article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
 	display: block;
 }
-body {
-	line-height: 1;
-}
 ol, ul {
 	list-style: none;
 }
@@ -45,4 +43,14 @@ q:before, q:after {
 table {
 	border-collapse: collapse;
 	border-spacing: 0;
+}
+
+/*2. GENERAL STYLES*/
+
+body {
+	line-height: 1;
+	font-size: 14px;
+	color: #333;
+	background: #ecf0f1;	
+	font-family: 'Roboto', Arial, sans-serif;
 }
