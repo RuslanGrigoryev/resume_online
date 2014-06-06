@@ -2,6 +2,7 @@
 	1. RESET STYLES
 	2. GENERAL STYLES
 	3. HEADER STYLES
+	4. MAIN STYLES
 */
 
 /*1. RESET STYLES*/
@@ -88,6 +89,10 @@ a:hover {
 	text-decoration: none;
 	color: #f00;
 }
+ol {
+	margin: 10px 0 10px 20px;
+	list-style: disc;
+}
 
 /*3. HEADER STYLES*/
 
@@ -105,4 +110,23 @@ header {
 }
 .main-menu__item {
 	display: inline-block;
+}
+.main-menu__item__link--active {
+	font-weight: 800;
+}
+
+/*4. MAIN STYLES*/
+
+.skype-button {
+	display: inline-block;
+}
+.skype-button img {
+	margin: 0 !important;
+	vertical-align: -4px !important;
+}
+.check-list {
+	margin: 0 0 0 60px;
+}
+.check-list__item {
+	line-height: 1.8em;
 }
