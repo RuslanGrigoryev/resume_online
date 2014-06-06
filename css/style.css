@@ -110,6 +110,7 @@ header {
 }
 .main-menu__item {
 	display: inline-block;
+	margin-right: 10px;
 }
 .main-menu__item__link--active {
 	font-weight: 800;
