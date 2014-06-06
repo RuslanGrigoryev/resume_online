@@ -182,7 +182,7 @@ header {
 	width: 60%;
 }
 .skill-list__item  .elem {
-    background: red;
+    background: rgb(159, 164, 223);
     width: 5%;
     height: 12px;
 }
