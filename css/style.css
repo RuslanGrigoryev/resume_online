@@ -1,8 +1,9 @@
-﻿/*ORDER LIST 
+/*ORDER LIST 
 	1. RESET STYLES
 	2. GENERAL STYLES
 	3. HEADER STYLES
 	4. MAIN STYLES
+	5. PORTFOLIO STYLES
 */
 
 /*1. RESET STYLES*/
@@ -100,6 +101,14 @@ ol {
 	margin: 10px 0 10px 20px;
 	list-style: disc;
 }
+.clearfix:before,
+.clearfix:after {
+  content:"";
+  display:table;
+}
+.clearfix:after {
+  clear:both;
+}
 
 /*3. HEADER STYLES*/
 
@@ -186,3 +195,18 @@ header {
     width: 5%;
     height: 12px;
 }
+
+/*5. PORTFOLIO STYLES*/
+
+.thumbs {}
+.thumbs__item {
+    float: left;
+    width: 320px;
+    height: 250px;
+    margin: 20px 5px;
+}
+.thumbs__link {
+    display: block;
+}
+.thumbs__item--image {}
+.thumbs__item--caption {}
