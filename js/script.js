@@ -3,11 +3,10 @@
   if ($('.skill_header').length) {
 	  var h = $('.skill_header');
 
-	  $(window).scroll(function() {
 		var scrollTop     = $(window).scrollTop(),
 		    elementOffset = h.offset().top,
 		    distance      = (elementOffset - scrollTop);
-			if (distance < 300) {
+			if (distance ) {
 				htmlSkill.init();
 				cssSkill.init();
 				preProcessorSkill.init();
@@ -18,7 +17,6 @@
 				emailSkill.init();
 				adobeSkill.init();
 			}
-	  });
   }
 
 
