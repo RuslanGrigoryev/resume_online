@@ -65,7 +65,7 @@ body {
 	box-sizing: border-box;
 	margin: 0px auto;
 	/* background: #F9F0CD; */
-	box-shadow: 0px 0px 3px 1px rgba(0,0,0,.4);
+	/* box-shadow: 0px 0px 3px 1px rgba(0,0,0,.4); */
 }
 h1 {
 	font-size: 1.5em;
@@ -204,15 +204,13 @@ header {
     width: 320px;
     height: 250px;
     margin: 20px 5px;
-    padding: 2px;
-    background: #E8EBCA;
-    box-shadow: 0px 0px 2px 1px rgba(0,0,0,0.35);
+    padding: 1px;
 }
 .thumbs__item:hover {
-	box-shadow: 0px 0px 1px 2px rgba(0,0,0,0.35);
 }
 .thumbs__link {
     display: block;
+    height: 250px;
 }
 .thumbs__item--image {
 }
@@ -221,4 +219,54 @@ header {
     text-align: center;
     font-size: 0.8em;
     padding: 5px 0 0 0;
+}
+.thumbs__item--caption--strong {
+	font-weight: bold;
+}
+.flip-container {
+  position: relative;
+  width: 320px;
+  height: 250px;
+  z-index: 1;
+}
+.flip-container {
+  perspective: 1000;
+  -webkit-perspective: 1000;
+  -moz-perspective: 1000;
+}
+.flip-card {
+  width: 100%;
+  height: 100%;
+  transform-style: preserve-3d;
+  -webkit-transform-style: preserve-3d;
+  -moz-transform-style: preserve-3d;
+  transition: all 1.0s linear;  
+  -webkit-transition: all 1.0s linear;
+  -moz-transition: all 1.0s linear;
+
+}
+.flip-container:hover .flip-card {
+  transform: rotateY(180deg);  
+  -webkit-transform: rotateY(180deg);
+  -moz-transform: rotateY(180deg);
+  box-shadow: 0px 0px 0px 1px #aaa;
+}
+.face {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden; 
+  -moz-backface-visibility: hidden;
+
+}
+.face.back {
+  display: block;
+  transform: rotateY(180deg);
+  -webkit-transform: rotateY(180deg);
+  -moz-transform: rotateY(180deg);
+  box-sizing: border-box;
+  padding: 10px;
+  color: white;
+  text-align: center;
 }
