@@ -64,8 +64,6 @@ body {
 	padding: 10px;
 	box-sizing: border-box;
 	margin: 0px auto;
-	/* background: #F9F0CD; */
-	/* box-shadow: 0px 0px 3px 1px rgba(0,0,0,.4); */
 }
 h1 {
 	font-size: 1.5em;
@@ -120,10 +118,14 @@ header {
 	font-size: 2.2em;
 	text-decoration: none;
 	display: inline-block;
+	vertical-align: 17px;
 }
 .main-menu {
 	float: right;
 	line-height: 3em;
+}
+.main-menu__back {
+	float: left;
 }
 .main-menu__item {
 	display: inline-block;
@@ -131,7 +133,91 @@ header {
 .main-menu__item__link--active {
 	font-weight: 800;
 }
-
+.social-list {
+	display: inline-block;
+	margin: 0 0 0 20px;
+}
+.social-item {
+	float: left;
+	margin: 0 2px;
+}
+.social-link {
+	position: relative;
+	width: 48px;
+	height: 48px;
+	display: block;
+}
+.social-link:hover .social-link__wrap {
+	opacity: 0;
+}
+.social-link:hover .social-link__hover {
+	opacity: 1;
+}
+.social-link__wrap {
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background: url(../i/markup/sprite.png) no-repeat;
+	transition: all 2s ease;
+	-webkit-transition: all 2s ease;
+}
+.portf-link .social-link__wrap {
+	transition: all 3s ease;
+	-webkit-transition: all 3s ease;
+}
+.social-link__hover {
+	opacity: 0;
+}
+.social-link__facebook {
+	background-position: 0px -72px;
+}
+.social-link__facebook--hover {
+	background-position: 0px -152px;
+}
+.social-link__twitter {
+	background-position: -71px -72px;
+}
+.social-link__twitter--hover {
+	background-position: -71px -152px;
+}
+.social-link__gplus {
+	background-position: -142px -72px;
+}
+.social-link__gplus--hover {
+	background-position: -142px -152px;
+}
+.social-link__linkedin {
+	background-position: -210px -72px;
+}
+.social-link__linkedin--hover {
+	background-position: -210px -152px;
+}
+.social-link__github {
+	background-position: -275px -72px;
+}
+.social-link__github--hover {
+	background-position: -275px -152px;
+}
+.social-link--mail {
+	background-position: -344px -72px;
+}
+.social-link__mail--hover {
+	background-position: -344px -152px;
+}
+.social-link__portf {
+	background-position: -412px -72px;
+}
+.social-link__portf--hover {
+	background-position: -412px -152px;
+}
+.social-link__back {
+	background-position: -480px -72px;
+}
+.social-link__back--hover {
+	background-position: -480px -152px;
+}
 /*4. MAIN STYLES*/
 
 .skype-button {
@@ -167,7 +253,7 @@ header {
 }
 .pdf-link {
 	display: inline-block;
-	vertical-align: 16px;
+	vertical-align: 17px;
 	margin-left: 20px;
 	padding-left: 20px;
 	background: url(../i/markup/sprite.png) 1px -1px no-repeat;
